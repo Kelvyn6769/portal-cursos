@@ -1,16 +1,10 @@
-# React + Vite
+# portal-cursos
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicação SPA desenvolvida em React + Vite para a disciplina de Aplicativos Web (IFTO).
 
-Currently, two official plugins are available:
+## Como executar o projeto
+1. Instale as dependências: `npm install`
+2. Inicie o servidor local: `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Funcionamento técnico
+A navegação entre as páginas Início e Cadastro foi implementada com o React Router (`BrowserRouter`, `Routes`, `Route` e `NavLink`), permitindo trocar de tela sem recarregar o navegador. O controle e a validação do formulário utilizam o hook `useState` para armazenar os dados e exibir mensagens de erro antes de confirmar o envio simulado.
